@@ -1,0 +1,19 @@
+{
+  "name": "deck",
+  "version": "1.0.0",
+  "description": "A collection of my presentations",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck index.mdx"
+  },
+  "keywords": [
+    "mdx",
+    "mdx-deck",
+    "react"
+  ],
+  "author": "Sunil Hari",
+  "license": "MIT",
+  "dependencies": {
+    "mdx-deck": "^1.8.1"
+  }
+}
