@@ -4,7 +4,6 @@ This repo would serve as store for my slides
 
 `index.md` determines slide contents
 
-`$ now` to deploy
 
 ## Documentation
 
