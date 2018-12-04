@@ -4886,6 +4886,13 @@ readdirp@^2.0.0:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
+rebass@^3.0.0-12:
+  version "3.0.0-12"
+  resolved "https://registry.yarnpkg.com/rebass/-/rebass-3.0.0-12.tgz#28c371d7e79fd0c44427fefee4171c385d7c1cf4"
+  integrity sha512-C59rDmDGS4usn5zbTRn23u6XkRPUrOEhe8vwgx0JFRoUB+Pf3SJ3LCwW7jrcgq3EAadujcUsL+2ugJqPyJCLSg==
+  dependencies:
+    styled-system "^3.1.11"
+
 recursive-readdir@2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/recursive-readdir/-/recursive-readdir-2.2.2.tgz#9946fb3274e1628de6e36b2f6714953b4845094f"

@@ -1,7 +1,193 @@
-export { dark as theme } from 'mdx-deck/themes'
+import {Head,Notes,Appear,Image} from 'mdx-deck'
+import { Text } from 'rebass'
 
-My slide
+<Head>
+<title>DialogFlow Basics</title>
+</Head>
+
+<Image src="Dialogflow_logo.svg" size={0.5}/>
+<Notes>
+  * Helps users build conversational experiences
+</Notes>
 ---
-My second slide
+Intents
+<Notes>
+  # To figure out what out users want
+    ## To understand what our users are saying
+  # The fundamental tool here is intent.
+  ## We would create an intent for anything that a user would request
+</Notes>
 ---
-My third slide
+
+<ul>
+<Appear>
+    <li>Check Prices</li>
+    <li>Book a Repair</li>
+    <li>Get Opening Hours</li>
+  </Appear>
+</ul>
+
+<Notes>
+Example would be that of an hotel booking
+We would create a conversational interface for an hotel booking app
+</Notes>
+---
+<ul>
+  <Appear>
+    <li>I'd like to get my bike fixed</li>
+    <li>My mountain bike is broken</li>
+    <li>Can you fix my bike this week</li>
+  </Appear>
+</ul>
+<Notes>
+For each intent we would provide various ways of a user might interact
+</Notes>
+---
+<ul>
+  <li>I'd like to get my bike fixed</li>
+  <li>My mountain bike is broken</li>
+  <li>Can you fix my bike this week</li>
+  <Appear>
+    <li><i>I need help with my bike</i></li>
+    <li><i>My bike needs a repair</i></li>
+    <li><i>Do you have any appointments for fixing a bike</i></li>
+    <li><i>I need to get my gears fixed</i></li>
+    <li><i>Can i get my bike's gear sorted out</i></li>
+    <li><i>I need to get my gears repaired</i> </li>
+  </Appear>
+</ul>
+<Notes>
+They would make use of this information that would train a machine learning model
+This would also match similar things that would mean the same thing
+</Notes>
+---
+<h2> Check Prices</h2>
+  <ul>
+    <li>How much is your best road bike</li>
+    <li>What does a tune-up cost</li>
+    <li>How much is it for repair</li>
+  </ul>
+---
+<h2>Book a repair</h2>
+  <ul>
+    <li>I'd like to get my bike fixed</li>
+    <li>My mountain bike is broken</li>
+    <li>Can you fix my bike this week</li>
+</ul>
+---
+<h2>Get Opening Hours</h2>
+  <ul>
+    <li>What are your hours?</li>
+    <li>How late are you open ?</li>
+    <li>When do you close?</li>
+</ul>
+
+<Notes>
+What is your opening time 
+We were open from 2pm
+</Notes>
+---
+<ul>
+  <li>Check Prices</li>
+  <li>Book a repair</li>
+  <li>Pay a bill</li>
+  <li>Schedule a Delivery</li>
+</ul>
+<Notes>
+  A typical application can have N number of intents depending on different use cases
+</Notes>
+---
+Entity
+ <Notes>
+ Extract info from dialogues
+ To act on specific piece of information 
+ </Notes>
+---
+<blockquote>
+"
+  My <Text
+  fontWeight='bold'
+  color='magenta'>
+  mountain bike
+</Text>  is broken,can i get it fixed <Text color='orange'>tomorrow</Text>?
+"
+</blockquote>
+
+<Notes>
+Dialog flow can pick up common entities like dates
+I'd like to schedule a service at 11 am tomorrow 
+</Notes>
+---
+# ```@bike-type```
+<ul>
+<Appear>
+  <li><Text
+  fontWeight='bold'
+  color='magenta'>
+  mountain bike
+</Text></li>
+<li><Text
+  fontWeight='bold'
+  color='magenta'>
+  Road bike
+</Text></li>
+<li><Text
+  fontWeight='bold'
+  color='magenta'>
+  Beach cruiser
+</Text></li>
+<li><Text
+  fontWeight='bold'
+  color='magenta'>
+  Racing bike
+</Text></li>
+<li><Text
+  fontWeight='bold'
+  color='magenta'>
+  Fixed gear bike
+</Text></li>
+</Appear>
+</ul>
+---
+
+# ```@service-option```
+<ul>
+<Appear>
+  <li><Text
+  fontWeight='bold'
+  color='lightgreen'>
+  Tune-up
+</Text></li>
+<li><Text
+  fontWeight='bold'
+  color='lightgreen'>
+  Repair
+</Text></li>
+<li><Text
+  fontWeight='bold'
+  color='lightgreen'>
+  Tire Change
+</Text></li>
+<li><Text
+  fontWeight='bold'
+  color='lightgreen'>
+  Upgrade
+</Text>
+</li>
+</Appear>
+</ul>
+
+---
+# Entity Types
+<ul>
+<Appear>
+  <li>System Entity</li>
+  <li>Developer Entity</li>
+  <li>User Entity</li>
+</Appear>
+</ul>
+---
+End
+---
+
+export { notes as theme } from 'mdx-deck/themes'

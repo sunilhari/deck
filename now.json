@@ -1,11 +1,11 @@
 {
-  "name": "deck",
-  "alias": "my-deck",
+  "name": "deck-dialog-flow",
+  "alias": "deck-dialog-flowExam",
   "version": 2,
   "builds": [
     {
-      "src": "index.mdx",
-      "use": "@now/mdx-deck"
+      "src": "dist/TEMP/index.html",
+      "use": "@now/static"
     }
   ]
 }
